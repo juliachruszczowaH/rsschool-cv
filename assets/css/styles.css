@@ -4,22 +4,23 @@
     box-sizing: border-box;
     display: block;
 }
+
 title {
     display: none;
 }
-.header-wrapper{
+
+.header-wrapper {
     display: flex;
     background-color: #404145;
     height: 240px;
-
 }
+
 body {
     font-family: "Ubuntu";
     max-width: 1024px;
     min-width: 960px;
     margin: 0 auto;
 }
-
 
 .main-heading {
     color: whitesmoke;
@@ -105,7 +106,6 @@ h2 {
     letter-spacing: 8px;
 }
 
-
 .fab {
     color: #20816d;
 }
@@ -136,6 +136,7 @@ h2 {
     width: 70%;
     float: right;
 }
+
 h2, .position-title {
     font-family: "Comfortaa";
     text-transform: uppercase;
@@ -147,6 +148,7 @@ h2 {
     font-size: 26px;
     padding-bottom: 15px;
 }
+
 h3 {
     color: #20816d;
 }
@@ -156,17 +158,21 @@ h3 {
     text-align: center;
     position: relative;
 }
-.work{
-    top:  95px;
+
+.work {
+    top: 95px;
 }
-.skills{
-    top:  25px;
+
+.skills {
+    top: 25px;
 }
+
 .skills-description {
     list-style-type: square;
     line-height: 25px;
     text-align: center;
 }
+
 .position-title {
     font-size: 16px;
     margin-top: 17px;
@@ -191,7 +197,7 @@ h3 {
     font-size: 14px;
 }
 
-div > a {
+div>a {
     text-decoration: none;
     color: black;
     font-size: 11px;
