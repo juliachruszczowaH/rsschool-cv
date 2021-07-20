@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  title {
+    display: none;
+  }
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  header {
+    background: whitesmoke;
+    text-align: center;
+    color: #404145;
+  }
+  main {
+    display: flex;
+  }
+  .main-heading{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 150px;
+  }
+  .toc {
+    flex: 25%;
+    background: #ece6e3;
+    padding: 10px;
+  }
+  .toc > section:last-child {
+    margin-top: 60px;
+  }
+  
+  .main-info {
+    flex: 75%;
+    background-color: white;
+    padding: 20px;
+  }
+  .title {
+    color: #404145;
+    padding: 40px 40px 40px 330px;
+    flex: 75%;
+  }
+  
+  .name,
+  .professional-title {
+    top: 50%;
+    left: 65%;
+  }
+  
+  .name {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+  
+  .professional-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    padding-top: 25px;
+  }
+  
+  .section-heading,
+  .section-languages {
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    color: #404145;
+    text-align: center;
+  }
+  
+  .section-heading p {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    font-size: 28px;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    letter-spacing: 8px;
+  }
+  
+  .fab {
+    color: #20816d;
+  }
+  
+  .languages li {
+    text-decoration: none;
+    padding: 10px 8px 15px 0;
+  }
+  
+  .degree-title {
+    font-size: 14px;
+  }
+  
+  .institution,
+  .date {
+    font-size: 12px;
+  }
+  
+  .date {
+    padding-bottom: 25px;
+  }
+  h2,
+  .position-title {
+    font-family: 'Comfortaa';
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    letter-spacing: 3px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  h3,.footer >a {
+    color: #20816d;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #20816d;}
+  .footer >a{
+    text-decoration: none;
+    font-family: 'Comfortaa';
+  }
+  article,
+  .multi > ul {
+    margin-bottom: 20px;
+  }
+  .multi > ul:not(:first-child) {
+    border-top: 2px solid #20816d;
+  }
+  .work,
+  .skills {
+    background-color: white;
+  }
+  
+  .skills-description {
+    list-style-type: square;
+    line-height: 25px;
+    text-align: left;
+  }
+  .position-title {
+    font-size: 15px;
+    margin-top: 17px;
+  }
+  
+  .dates {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  
+  .job-items {
+    margin: 10px auto;
+    display: flex;
+    border-top: 2px solid #20816d;
+  }
+  .job-term {
+    flex: 30%;
+  }
+  
+  .job-description {
+    flex: 70%;
+  }
+  
+  div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  .hide{
+      margin-top: 40px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    main {
+      flex-direction: column;
+    }
+    .hide {
+      display: none;
+    }
+    .section-heading,
+    .section-languages,
+    .toc {
+      margin-top: 0;
+    }
+    h2 {
+      margin-bottom: 5px;
+    }
+    .title {
+      padding-left: 0;
+    }
+    .social-media li,
+    .languages li {
+      padding-bottom: 0;
+      font-size: 18px;
+      padding-top: 0;
+    }
+  }
+
+
+.hex-image {
+    min-width: 150px;
+    max-width: 150px;
+    height: 150px;
+    background: url(../images/image.jpg) no-repeat;
+    background-size: cover;
+    background-position: 30% 60%;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    position: relative;
+    left: 5px;
+    flex: 25%;
+    top: 5px;
+    z-index: 2;
+}
+
+.footer {
+
+}
+.footer-brand> img{
+    min-width: 30px;
+    height: 30px;
+}
