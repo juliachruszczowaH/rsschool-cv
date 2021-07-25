@@ -207,20 +207,14 @@
   }
 
 
-.hex-image {
-    min-width: 150px;
+.main-heading-image {
     max-width: 150px;
-    height: 150px;
-    background: url(../images/image.jpg) no-repeat;
-    background-size: cover;
-    background-position: 30% 60%;
     display: flex;
     flex-basis: auto;
     flex-grow: 1;
     position: relative;
     left: 5px;
     flex: 25%;
-    top: 5px;
     z-index: 2;
 }
 
