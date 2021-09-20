@@ -18,7 +18,7 @@ title {
 }
 
 body {
-  background: no-repeat top /cover url(/assets/images/back.png);
+  background: no-repeat top /cover url("../images/back.png");
   font: var(--main-stylefont);
 }
 
@@ -34,7 +34,7 @@ header {
   color: whitesmoke;
   padding: 5px;
   border-bottom: 4px solid var(--decorate-color);
-  background: no-repeat top /cover url(/assets/images/background.jpg);
+  background: no-repeat top /cover url("../images/background.jpg");
 }
 
 header .main-heading-image {
@@ -251,10 +251,19 @@ h3, .footer>a {
   padding: 5px;
   display: flex;
   align-items: center;
+  width: 235px;
+  border-radius: 10px;
 }
 
 #code a i::before {
-  content: url(/assets/images/brand_codewars_icon.png);
+  content: url("../images/brand_codewars_icon.svg");
+}
+
+#code a:hover i{
+  filter: invert(12%) sepia(36%) saturate(6523%) hue-rotate(342deg) brightness(96%) contrast(88%);
+}
+#code a:hover span{
+  color: var(--decorate-color);
 }
 
 .multi>ul:not(:first-child), .jobs-items-list>.job-items:not(:first-child) {
@@ -265,6 +274,17 @@ h3, .footer>a {
   list-style-type: square;
   line-height: 25px;
   text-align: left;
+}
+
+.skills-description li{
+  display: flex;
+}
+
+.skills-description li h4{
+  flex: 25%;
+}
+.skills-description li span{
+  flex: 75%;
 }
 
 .position-title {
@@ -415,10 +435,20 @@ figure img {
 
 #contacts .social-media li:hover, #contacts .social-media li:hover i {
   color: var(--decorate-color);
-  background-color: var(--dark-color);
   border-color: var(--decorate-color);
 }
-
+.social-media a{
+  display: flex;
+  align-items: center;
+  
+}
+.contact-content{
+  display: flex;
+}
+.contact-content span:first-child{
+  text-transform: uppercase;
+  width: 135px;
+}
 @-webkit-keyframes slideInLeft {
   0% {
     transform: translate3d(-200px, 0, 0);
@@ -661,6 +691,7 @@ figure img {
   .name {
     color: whitesmoke;
     font-size: 18px;
+    text-shadow: 1px 3px var(--dark-color);
   }
   .footer-wrapper a>span {
     display: none;
@@ -675,5 +706,11 @@ figure img {
   .languages ul {
     flex-direction: column;
     ;
+  }
+  .contact-content{
+    flex-direction: column;
+  }
+  .skills-description li{
+   flex-direction: column;
   }
 }
