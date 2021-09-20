@@ -8,227 +8,445 @@
     <title>CV | Yuliya Khrushchova</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <!--GOOGLE FONT-->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
 </head>
 
 <body>
     <header>
-        <div class="header-wrapper">
-            
-            <div class="main-heading">
-                <img class="main-heading-image" src="./assets/images/image.jpg" alt="Julia Khrushchova">
-                <h1 class="title">
-                    <span class="name">Yuliya Khrushchova</span>
-                    <span class="professional-title">JavaScript developer</span>
-                </h1>
+        <div class="header-wrapper wrapper">
+            <h1 class="header-title">
+                <span class="name">Yuliya Khrushchova</span>
+                <span class="professional-title">Junior Front-End developer
+                </span>
+            </h1>
+            <div class="header-menu">
+                <a href="#summary" class="active_link">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#code">Code</a>
+                <a href="#projects">Projects</a>
+                <img class="main-heading-image" src="./assets/images/image.png" alt="Julia Khrushchova">
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#languages">Languages</a>
+                <a href="#contacts">Contacts</a>
             </div>
-        </div>
-    </header>
-    <main>
-        <aside class="toc">
-            <section class="section-heading">
-                <h2>Contacts</h2>
-                <div class="contact-info">
-                    <a href="tel:+375293640373">+375 29 364 03 73</a>
-                    <a href="mailto:julia.chruszczowa@gmail.com">julia.chruszczowa@gmail.com</a>
+            <div class="header-menu-mobile">
+                <img class="main-heading-image" src="./assets/images/image.png" alt="Julia Khrushchova">
+                <div class="burger-container">
+                    <div class="b-nav">
+                        <li> <a href="#summary" class="active_link">Summary</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#code">Code</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </div>
+
+                    <!-- Burger-Icon -->
+                    <div class="b-container">
+                        <div class="b-menu">
+                            <div class="b-bun b-bun--top"></div>
+                            <div class="b-bun b-bun--mid"></div>
+                            <div class="b-bun b-bun--bottom"></div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="content-wrapper wrapper">
+        <main>
+            <section class="summary scrollto active_section" id="summary">
+                <h2><span><i class="fas fa-user-circle"></i>Summary</span></h2>
+                <div class="summary-description">
+                    <p>5+ years work experience as a software test engineer
+                        in an agile development environment for
+                        Web applications. Responsible for exploratory &
+                        confirmation testing, creating test
+                        documentation, creating/maintaining automated tests
+                        (Cypress, Selenium WebDriver). Direct
+                        communication.</p>
+                </div>
+            </section>
+            <section class="skills scrollto" id="skills">
+                <h2><span><i class="fas fa-cogs"></i>Skills</span></h2>
+                <div class="skills-items">
+                    <ul class="skills-description">
+                        <li>Technologies: HTML, CSS, ES6, XML.</li>
+                        <li>Tools: Cypress, Selenium WebDriver, TestLink,
+                            TestRail, Postman/REST/Soap UI, InDesign,
+                            Illustrator, Charles.</li>
+                        <li>Bug tracking system: Jira</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="scrollto" id="code">
+                <h2><span><i class="fas fa-code"></i>Code example</span></h2>
+                <div>
+                    <a href="https://www.codewars.com/kata/539a0e4d85e3425cb0000a88" target="blank"><i></i><span>A Chain
+                            adding function</span></a>
+                    <pre><code>
+function add(n) {
+// Let the currying begin!
+let newFunction = function (x) {
+  return add(n + x);
+};
+newFunction.toString = function () {
+  return n;
+};
+return newFunction;
+}
+                        </code></pre>
+                </div>
+            </section>
+            <section class="scrollto" id="projects">
+                <h2><span><i class="fab fa-linkedin"></i>Projects</span></h2>
+                <div class="examples-container">
+                    <a href="https://rolling-scopes-school.github.io/juliachruszczowah-JSFEPRESCHOOL/js-clock/"
+                        target="blank">
+                        <article>
+                            <figure>
+                                <img src="./assets/images/jsclock.jpg" alt="js-clock">
+                                <figcaption>JS-Clock</figcaption>
+                            </figure>
+                            <div class="description">
+                                <div class="labels">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/juliachruszczowah-JSFEPRESCHOOL/drum-kit/"
+                        target="blank">
+                        <article>
+                            <figure>
+                                <img src="./assets/images/drumkit.jpg" alt="drum-kit">
+                                <figcaption>Drum-kit</figcaption>
+                            </figure>
+                            <div class="description">
+                                <div class="labels">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/juliachruszczowah-JSFEPRESCHOOL/photofilter/"
+                        target="blank">
+                        <article>
+                            <figure>
+                                <img src="./assets/images/photofilter.jpg" alt="photofilter">
+                                <figcaption>Photofilter</figcaption>
+                            </figure>
+                            <div class="description">
+                                <div class="labels">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/juliachruszczowah-JSFEPRESCHOOL/palette/"
+                        target="blank">
+                        <article>
+                            <figure>
+                                <img src="./assets/images/palette.jpg" alt="palette">
+                                <figcaption>Palette</figcaption>
+                            </figure>
+                            <div class="description">
+                                <div class="labels">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/juliachruszczowah-JSFEPRESCHOOL/usertabs/"
+                        target="blank">
+                        <article>
+                            <figure>
+                                <img src="./assets/images/userstab.jpg" alt="">
+                                <figcaption>Userstabs</figcaption>
+                            </figure>
+                            <div class="description">
+                                <div class="labels">
+                                    <span>html</span>
+                                    <span>css</span>
+                                    <span>js</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+            <section class="work scrollto" id="experience">
+                <h2><span><i class="fas fa-briefcase"></i>Experience</span></h2>
+                <div class="jobs-items-list">
+                    <div class="job-items">
+                        <div class="job-term">
+                            <h4 class="position-title">QA Engineer</h4>
+                            <p class="dates">September 2017 – up to now</p>
+                        </div>
+
+                        <div class="job-description multi">
+                            <ul>
+                                <li><b>Project description:</b> A collaborative
+                                    supply chain platform for sharing and
+                                    visualizing data in real-time.</li>
+                                <li><b>Responsibilities:</b> Execute manual
+                                    functional testing
+                                    (Smoke, Regression, Confirmation,
+                                    Exploratory); Creating/maintaining Automated
+                                    tests
+                                    (Cypress,
+                                    Selenium WebDriver) Perform
+                                    different testing activities: working with
+                                    documentation, creating test documentation,
+                                    reporting bugs & creating testing reports;
+                                    Communicating directly with customer; Tasks
+                                    estimation</li>
+                            </ul>
+                            <ul>
+                                <li><b>Project description:</b> Chart design
+                                    tool (online chart maker & chart maker
+                                    plug-in
+                                    for
+                                    Illustrator) </li>
+                                <li><b>Responsibilities:</b> Execute manual
+                                    functional testing
+                                    (Smoke, Regression, Confirmation,
+                                    Exploratory); Creating/maintaining Automated
+                                    tests
+                                    (Cypress,
+                                    Selenium WebDriver) Perform
+                                    different testing activities: working with
+                                    documentation, creating test documentation,
+                                    reporting bugs & creating testing reports;
+                                    Communicating directly with customer; Tasks
+                                    estimation</li>
+                            </ul>
+                            <ul>
+                                <li><b>Project description:</b> Patient data
+                                    management software for caregivers
+                                    (healthcare)
+                                </li>
+                                <li><b>Responsibilities:</b>
+                                    Creating/maintaining Automated tests
+                                    (Cypress+Cucumber)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="job-items">
+                        <div class="job-term">
+                            <h4 class="position-title">QA Engineer</h4>
+                            <p class="dates">April 2015 - September 2017</p>
+                        </div>
+
+                        <div class="job-description">
+                            <ul>
+                                <li><b>Project description:</b> SaaS-based
+                                    platform for
+                                    creating documents</li>
+                                <li><b>Responsibilities:</b> Execute manual
+                                    functional testing
+                                    (Smoke, Regression, Confirmation); Perform
+                                    different testing activities; Analyzing
+                                    results of automated tests; Create bug
+                                    reports and quality
+                                    status
+                                    reports; Communicate directly with customer.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-items">
+                        <div class="job-term">
+                            <h4 class="position-title">Specialist</h4>
+                            <p class="dates">March 2011 - February 2015</p>
+                        </div>
+
+                        <div class="job-description">
+                            <ul>
+                                <li><b>Responsibilities:</b> Analysis and
+                                    evaluation of
+                                    suppliers, planning and placement of orders,
+                                    organization of deliveries, maintaining the
+                                    necessary inventory in stock.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-items">
+                        <div class="job-term">
+                            <h4 class="position-title">Economist</h4>
+                            <p class="dates">February 2010 - March 2011</p>
+                        </div>
+
+                        <div class="job-description">
+                            <ul>
+                                <li><b>Responsibilities:</b> Purchasing of PPE,
+                                    paints,
+                                    chemicals (including reagents for
+                                    laboratories).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="job-items">
+                        <div class="job-term">
+                            <h4 class="position-title">Chemical industrial
+                                engineer</h4>
+                            <p class="dates">August 2004 - February 2010</p>
+                        </div>
+
+                        <div class="job-description">
+                            <ul>
+                                <li><b>Responsibilities:</b> The development of
+                                    technological processes for electroplating.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="scrollto" id="education">
+                <h2><span><i class="fas fa-graduation-cap"></i>Education</span></h2>
+                <div class="education-items">
+
+                    <div class="edu-item">
+                        <h3>Higher education</h3>
+                        <div class="edu-content">
+                            <div>
+                                <h4 class="degree-title">Economist / Manager</h4>
+                                <div class="edu-intitution">
+                                    <p class="institution">Belarusian State Economical
+                                        University</p>
+                                    <p class="date">2004-2005</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="degree-title">Chemical industrial engineer</h4>
+                                <div class="edu-intitution">
+                                    <p class="institution">Belarusian State Technological
+                                        University</p>
+                                    <p class="date">1998-2004</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edu-item">
+                        <h3>Certificates</h3>
+                        <div class="edu-content">
+                            <div>
+                                <h4 class="certificate-title">ISTQB CTFL</h4>
+                                <p class="date edu-intitution">January 2016</p>
+                            </div>
+                            <div>
+                                <h4 class="certificate-title">JS/FE PRE-SCHOOL (JAVASCRIPT)
+                                </h4>
+                                <p class="date edu-intitution">September 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="scrollto" id="languages">
+                <h2><span><i class="fas fa-globe"></i>Languages</span></h2>
+                <div class="languages">
+                    <ul>
+                        <li>
+                            <h3>English</h3>
+                            <span>B1 - B2</span>
+                        </li>
+                        <li>
+                            <h3>Polish</h3>
+                            <span>A2</span>
+                        </li>
+                        <li>
+                            <h3>Russian</h3>
+                            <span>native speaker</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="scrollto" id="contacts">
+                <h2><span><i class="fas fa-address-card"></i>Contacts</span></h2>
                 <div>
                     <ul class="social-media">
                         <li>
-                            <a href="linkedin.com/in/yuliya-khrushchova-382a7b102" target="_blank">
+                            <a href="https://www.linkedin.com/in/yuliya-khrushchova-382a7b102/" target="_blank">
                                 <i class="fab fa-linkedin"></i>
+                                <span>linkedin: Yuliya Khrushchova</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://github.com/juliachruszczowaH" target="_blank">
                                 <i class="fab fa-github"></i>
+                                <span>github: juliachruszczowaH</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://t.me/julia_szcz" target="_blank">
                                 <i class="fab fa-telegram"></i>
+                                <span>telegram: https://t.me/julia_szcz</span>
                             </a>
                         </li>
                         <li>
                             <a href="skype:hrustapka?call">
                                 <i class="fab fa-skype"></i>
+                                <span>skype: hrustapka</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+375293640373">
+                                <i class="fas fa-phone"></i>
+                                <span>+375(29)364-03-73</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:julia.chruszczowa@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                                <span>julia.chruszczowa@gmail.com</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="section-languages hide">
-                <h2>languages</h2>
-                <div class="languages">
-                    <ul>
-                        <li>English (B1 - B2)</li>
-                        <li>Polish (A2)</li>
-                        <li>Russian (native speaker)</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="section-heading hide">
-                <h2>Certificates</h2>
-                <div>
-                    <h3 class="certificate-title">ISTQB CTFL</h3>
-                    <p class="date">January 2016</p>
-                </div>
-            </section>
-            <section class="section-heading hide">
-                <h2>Education</h2>
-                <div>
-                    <h3 class="degree-title">Economist / Manager</h3>
-                    <p class="institution">Belarusian State Economical
-                        University</p>
-                    <p class="date">2004-2005</p>
-                </div>
-                <div>
-                    <h3 class="degree-title">Chemical industrial engineer</h3>
-                    <p class="institution">Belarusian State Technological
-                        University</p>
-                    <p class="date">1998-2004</p>
-                </div>
-            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-wrapper wrapper">
+            <a href="https://github.com/juliachruszczowaH" target="blank">
+                <i class="fab fa-github"></i>
+                <span>My GitHub</span>
+            </a>
+            <span>2021</span>
+            <a class="footer-brand" href="https://rs.school/js/" target="blank"><img
+                    src="./assets/images/rs_school_js.svg" alt="RS Logo"></a>
+        </div>
 
-        </aside>
-        <section class="main-info">
-            <article class="summary">
-                <h3>Summary</h3>
-                <div class="summary-description">
-                    <p>5+ years work experience as a software test engineer in an agile development environment for
-                        Web applications. Responsible for exploratory & confirmation testing, creating test
-                        documentation, creating/maintaining automated tests (Cypress, Selenium WebDriver). Direct
-                        communication.</p>
-                </div>
-            </article>
-            <article class="skills">
-                <h3>Skills</h3>
-                <div class="skills-items">
-                    <ul class="skills-description">
-                        <li>Technologies: HTML, CSS, ES6, XML.</li>
-                        <li>Tools: Cypress, Selenium WebDriver, TestLink, TestRail, Postman/REST/Soap UI, InDesign,
-                            Illustrator, Charles.</li>
-                        <li>Bug tracking system: Jira</li>
-                    </ul>
-                </div>
-            </article>
-            <article class="work">
-                <h3>Experience</h3>
-                <div class="job-items">
-                    <div class="job-term">
-                        <h4 class="position-title">QA Engineer</h4>
-                        <p class="dates">September 2017 – up to now</p>
-                    </div>
-
-                    <div class="job-description multi">
-                        <ul>
-                            <li><b>Project description:</b> A collaborative supply chain platform for sharing and
-                                visualizing data in real-time.</li>
-                            <li><b>Responsibilities:</b> Execute manual functional testing
-                                (Smoke, Regression, Confirmation, Exploratory); Creating/maintaining Automated tests
-                                (Cypress,
-                                Selenium WebDriver) Perform
-                                different testing activities: working with documentation, creating test documentation,
-                                reporting bugs & creating testing reports; Communicating directly with customer; Tasks
-                                estimation</li>
-                        </ul>
-                        <ul>
-                            <li><b>Project description:</b> Chart design tool (online chart maker & chart maker plug-in
-                                for
-                                Illustrator) </li>
-                            <li><b>Responsibilities:</b> Execute manual functional testing
-                                (Smoke, Regression, Confirmation, Exploratory); Creating/maintaining Automated tests
-                                (Cypress,
-                                Selenium WebDriver) Perform
-                                different testing activities: working with documentation, creating test documentation,
-                                reporting bugs & creating testing reports; Communicating directly with customer; Tasks
-                                estimation</li>
-                        </ul>
-                        <ul>
-                            <li><b>Project description:</b> Patient data management software for caregivers (healthcare)
-                            </li>
-                            <li><b>Responsibilities:</b> Creating/maintaining Automated tests
-                                (Cypress+Cucumber)</li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="job-items">
-                    <div class="job-term">
-                        <h4 class="position-title">QA Engineer</h4>
-                        <p class="dates">April 2015 - September 2017</p>
-                    </div>
-
-                    <div class="job-description">
-                        <ul>
-                            <li><b>Project description:</b> SaaS-based platform for
-                                creating documents</li>
-                            <li><b>Responsibilities:</b> Execute manual functional testing
-                                (Smoke, Regression, Confirmation); Perform different testing activities; Analyzing
-                                results of automated tests; Create bug reports and quality
-                                status
-                                reports; Communicate directly with customer.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="job-items">
-                    <div class="job-term">
-                        <h4 class="position-title">Specialist</h4>
-                        <p class="dates">March 2011 - February 2015</p>
-                    </div>
-
-                    <div class="job-description">
-                        <ul>
-                            <li><b>Responsibilities:</b> Analysis and evaluation of
-                                suppliers, planning and placement of orders,
-                                organization of deliveries, maintaining the
-                                necessary inventory in stock.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="job-items">
-                    <div class="job-term">
-                        <h4 class="position-title">Economist</h4>
-                        <p class="dates">February 2010 - March 2011</p>
-                    </div>
-
-                    <div class="job-description">
-                        <ul>
-                            <li><b>Responsibilities:</b> Purchasing of PPE, paints,
-                                chemicals (including reagents for
-                                laboratories).</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="job-items">
-                    <div class="job-term">
-                        <h4 class="position-title">Chemical industrial engineer</h4>
-                        <p class="dates">August 2004 - February 2010</p>
-                    </div>
-
-                    <div class="job-description">
-                        <ul>
-                            <li><b>Responsibilities:</b> The development of
-                                technological processes for electroplating.</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-            <footer class="footer">
-                <a href="https://github.com/juliachruszczowaH" >
-                    <span>https://github.com/juliachruszczowaH</span>
-                </a>
-                <span>2021</span>
-                <a class="footer-brand" href="https://rs.school/js/"><img src="./assets/images/rs_school_js.svg" alt="RS Logo"></a>
-            </footer>
-        </section>
-
-    </main>
-
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 
 </html>
