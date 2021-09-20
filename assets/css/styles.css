@@ -18,7 +18,7 @@ title {
 }
 
 body {
-  background: no-repeat top /cover url(/assets/images/back.png);
+  background: no-repeat top /cover url("../images/back.png");
   font: var(--main-stylefont);
 }
 
@@ -34,7 +34,7 @@ header {
   color: whitesmoke;
   padding: 5px;
   border-bottom: 4px solid var(--decorate-color);
-  background: no-repeat top /cover url(/assets/images/background.jpg);
+  background: no-repeat top /cover url("../images/background.jpg");
 }
 
 header .main-heading-image {
@@ -254,7 +254,7 @@ h3, .footer>a {
 }
 
 #code a i::before {
-  content: url(/assets/images/brand_codewars_icon.png);
+  content: url("../images/brand_codewars_icon.png");
 }
 
 .multi>ul:not(:first-child), .jobs-items-list>.job-items:not(:first-child) {
