@@ -66,6 +66,9 @@ header .main-heading-image {
   flex-direction: row;
   justify-content: space-between;
 }
+.header-menu a{
+  padding: 3px;
+}
 
 .header-menu-mobile {
   display: none;
@@ -121,6 +124,7 @@ figcaption {
   color: #20816d;
   font: var(--head-stylefont);
   text-transform: uppercase;
+  text-shadow: 3px 3px var(--dark-color);
 }
 
 .professional-title {
@@ -703,31 +707,6 @@ figure img {
       margin-top: 40px;
   }
   
-  @media screen and (max-width: 900px) {
-    main {
-      flex-direction: column;
-    }
-    .hide {
-      display: none;
-    }
-    .section-heading,
-    .section-languages,
-    .toc {
-      margin-top: 0;
-    }
-    h2 {
-      margin-bottom: 5px;
-    }
-    .title {
-      padding-left: 0;
-    }
-    .social-media li,
-    .languages li {
-      padding-bottom: 0;
-      font-size: 18px;
-      padding-top: 0;
-    }
-  }
   .contact-content{
     flex-direction: column;
   }
@@ -735,4 +714,8 @@ figure img {
    flex-direction: column;
   }
 
+  .professional-title {
+    letter-spacing: 0;
+    font-size: 14px;
+  }
 }
